@@ -91,10 +91,10 @@ export default function ContactPage() {
     <div className="pt-24 min-h-screen">
       {/* Hero */}
       <section className="py-20 gradient-mesh relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full bg-brand-blue/10 blur-3xl" />
+        <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full bg-brand-blue-10 blur-3xl" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <ScrollReveal>
-            <span className="inline-block px-4 py-2 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-brand-blue-10 text-brand-blue text-sm font-semibold mb-6">
               Contact Us
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-brand-navy mb-5 leading-tight">
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   <div className="space-y-6 mb-10">
                     {contactInfo.map(({ icon: Icon, label, value, href }) => (
                       <div key={label} className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-brand-blue/10 flex items-center justify-center shrink-0">
+                        <div className="w-10 h-10 rounded-xl bg-brand-blue-10 flex items-center justify-center shrink-0">
                           <Icon className="w-5 h-5 text-brand-blue" />
                         </div>
                         <div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                       }}
                     />
                     <div className="relative">
-                      <p className="text-white/80 text-sm leading-relaxed mb-4">
+                      <p className="text-white-80 text-sm leading-relaxed mb-4">
                         We work with businesses across South Africa. Remote
                         engagements welcome.
                       </p>

@@ -21,7 +21,7 @@ export default function Footer() {
                 Grama<span className="text-brand-blue-light">tis</span>
               </span>
             </Link>
-            <p className="text-sm text-white/60 max-w-xs leading-relaxed">
+            <p className="text-sm text-white-60 max-w-xs leading-relaxed">
               IT consulting that actually delivers. We help businesses build
               smarter systems, streamline operations, and unlock the power of
               AI — without the buzzword overhead.
@@ -35,7 +35,7 @@ export default function Footer() {
                 <button
                   key={label}
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand-blue transition-colors duration-200 flex items-center justify-center"
+                  className="w-9 h-9 rounded-lg bg-white-10 hover:bg-brand-blue transition-colors duration-200 flex items-center justify-center"
                 >
                   <Icon className="w-4 h-4" />
                 </button>
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-white-40 mb-4">
               Navigation
             </h4>
             <ul className="space-y-2.5">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    className="text-sm text-white-60 hover:text-white transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-white-40 mb-4">
               Services
             </h4>
             <ul className="space-y-2.5">
@@ -82,7 +82,7 @@ export default function Footer() {
                 "Security",
               ].map((s) => (
                 <li key={s}>
-                  <span className="text-sm text-white/60">{s}</span>
+                  <span className="text-sm text-white-60">{s}</span>
                 </li>
               ))}
             </ul>
@@ -91,10 +91,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/40">
+          <p className="text-xs text-white-40">
             &copy; {year} Gramatis. All rights reserved.
           </p>
-          <p className="text-xs text-white/40">
+          <p className="text-xs text-white-40">
             Built with precision. Delivered with purpose.
           </p>
         </div>

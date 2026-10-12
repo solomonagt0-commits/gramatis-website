@@ -101,9 +101,9 @@ export default function HomePage() {
       {/* ─── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center justify-center gradient-mesh overflow-hidden pt-20">
         {/* Background gradient blobs */}
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-brand-blue/10 blur-3xl animate-float" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-blue-tint blur-3xl animate-float" />
         <div
-          className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-brand-blue-light/10 blur-3xl animate-float"
+          className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-sky-tint blur-3xl animate-float"
           style={{ animationDelay: "-3s" }}
         />
 
@@ -113,7 +113,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={loaded ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-medium mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-tint text-brand-blue text-sm font-medium mb-8"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse" />
             IT Consulting · Cloud · AI
@@ -205,7 +205,7 @@ export default function HomePage() {
                       suffix={stat.suffix}
                     />
                   </div>
-                  <p className="text-sm text-white/50 font-medium uppercase tracking-wide">
+                  <p className="text-sm text-white-50 font-medium uppercase tracking-wide">
                     {stat.label}
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function HomePage() {
                   <br />
                   <span className="text-brand-blue-light">buzzword company.</span>
                 </h2>
-                <p className="text-white/60 text-lg mb-8 leading-relaxed">
+                <p className="text-white-60 text-lg mb-8 leading-relaxed">
                   We started Gramatis because too many IT firms sell complexity
                   for its own sake. We sell outcomes. If the simplest solution
                   is the right one — that's what we build.
@@ -315,9 +315,9 @@ export default function HomePage() {
             <div className="space-y-4">
               {whyGramatis.map((item, i) => (
                 <ScrollReveal key={item} delay={i * 0.1}>
-                  <div className="flex items-start gap-4 p-5 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-200">
+                  <div className="flex items-start gap-4 p-5 rounded-xl bg-white-5 hover:bg-white-10 transition-colors duration-200">
                     <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
-                    <span className="text-white/80 text-sm leading-relaxed">
+                    <span className="text-white-80 text-sm leading-relaxed">
                       {item}
                     </span>
                   </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Ready to build something that actually works?
             </h2>
-            <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-white-70 text-lg mb-10 max-w-2xl mx-auto">
               Let's talk about what your business actually needs — no pitch,
               no pressure. Just an honest conversation about where IT can do
               more.

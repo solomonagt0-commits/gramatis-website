@@ -33,7 +33,7 @@ export default function Navbar() {
       <motion.header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "py-2 bg-white/80 backdrop-blur-xl shadow-sm"
+            ? "py-2 bg-white-80 backdrop-blur-xl shadow-sm"
             : "py-4 bg-transparent"
         }`}
         initial={{ y: -80, opacity: 0 }}
@@ -68,7 +68,7 @@ export default function Navbar() {
                     {active && (
                       <motion.span
                         layoutId="nav-indicator"
-                        className="absolute inset-0 bg-brand-blue/10 rounded-full"
+                        className="absolute inset-0 bg-brand-blue-10 rounded-full"
                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                       />
                     )}

@@ -140,10 +140,10 @@ export default function ServicesPage() {
     <div className="pt-24">
       {/* Hero */}
       <section className="py-24 gradient-mesh relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue/10 blur-3xl" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue-10 blur-3xl" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <ScrollReveal>
-            <span className="inline-block px-4 py-2 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-brand-blue-10 text-brand-blue text-sm font-semibold mb-6">
               Our Services
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6 leading-tight">
@@ -253,11 +253,11 @@ export default function ServicesPage() {
             {process.map((step, i) => (
               <ScrollReveal key={step.step} delay={i * 0.1}>
                 <div className="relative">
-                  <div className="text-6xl font-bold text-white/10 mb-4">
+                  <div className="text-6xl font-bold text-white-40 mb-4">
                     {step.step}
                   </div>
                   <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed">
+                  <p className="text-white-60 text-sm leading-relaxed">
                     {step.desc}
                   </p>
                   {i < process.length - 1 && (
