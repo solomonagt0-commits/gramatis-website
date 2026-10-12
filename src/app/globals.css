@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
-@theme {
-  --color-brand-navy: #0B1B3D;
-  --color-brand-navy-light: #1a2f5a;
-  --color-brand-blue: #4682B4;
-  --color-brand-blue-light: #3D9BE9;
-  --color-brand-blue-sky: #4B9EE2;
-  --color-brand-orange: #DB8514;
-  --color-brand-dark: #161616;
-  --color-brand-gray: #303030;
-  --color-brand-muted: #5F6360;
-  --color-brand-light: #E2E2E2;
+@layer base {
+  :root {
+    --brand-navy: #0B1B3D;
+    --brand-navy-light: #1a2f5a;
+    --brand-blue: #4682B4;
+    --brand-blue-light: #3D9BE9;
+    --brand-blue-sky: #4B9EE2;
+    --brand-orange: #DB8514;
+    --brand-dark: #161616;
+    --brand-gray: #303030;
+    --brand-muted: #5F6360;
+    --brand-light: #E2E2E2;
+  }
 }
 
 :root {
@@ -43,6 +45,30 @@ body {
     radial-gradient(ellipse at 80% 80%, rgba(61, 155, 233, 0.1) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 50%, rgba(13, 27, 61, 0.05) 0%, transparent 70%);
 }
+
+.bg-brand-navy { background-color: var(--brand-navy); }
+.bg-brand-navy-light { background-color: var(--brand-navy-light); }
+.bg-brand-blue { background-color: var(--brand-blue); }
+.bg-brand-blue-light { background-color: var(--brand-blue-light); }
+.bg-brand-orange { background-color: var(--brand-orange); }
+.bg-brand-dark { background-color: var(--brand-dark); }
+.bg-brand-gray { background-color: var(--brand-gray); }
+.bg-brand-muted { background-color: var(--brand-muted); }
+.bg-brand-light { background-color: var(--brand-light); }
+
+.text-brand-navy { color: var(--brand-navy); }
+.text-brand-blue { color: var(--brand-blue); }
+.text-brand-blue-light { color: var(--brand-blue-light); }
+.text-brand-orange { color: var(--brand-orange); }
+.text-brand-dark { color: var(--brand-dark); }
+.text-brand-gray { color: var(--brand-gray); }
+.text-brand-muted { color: var(--brand-muted); }
+.text-brand-light { color: var(--brand-light); }
+.text-white\/ { color: var(--tw-opacity); }
+
+.border-brand-light { border-color: var(--brand-light); }
+.border-brand-blue { border-color: var(--brand-blue); }
+.border-red-400 { border-color: #f87171; }
 
 /* Glassmorphism card */
 .glass {

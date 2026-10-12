@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Linkedin, Twitter, Mail } from "lucide-react";
+import { Zap, Globe, Mail } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -28,8 +28,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-5">
               {[
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Twitter, label: "Twitter" },
+                { icon: Globe, label: "LinkedIn" },
+                { icon: Globe, label: "Twitter" },
                 { icon: Mail, label: "Email" },
               ].map(({ icon: Icon, label }) => (
                 <button
